@@ -1,5 +1,118 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
+  background-color: var(--main-color);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+}
+.header {
+  background-image: url(../images/cover-image-dark.png);
+  
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  height: 668px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr min-content 1fr min-content;
+}
+.header::before{
+  content: "";
+  align-self: flex-end;
+  justify-self: end;
+  margin-block-start: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: solid 1px var(--accent-color);
+  border-right: solid 1px var(--accent-color);
+}
+.header::after{
+  content: "";
+  align-self: flex-end;
+  justify-self: start;
+  width: 25px;
+  height: 25px;
+  border-bottom: solid 1px var(--accent-color);
+  border-left: solid 1px var(--accent-color);
+}
+.header__theme-menu{
+  justify-self: end;
+  align-self: center;
+}
+.header__theme-menu-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.header__decor{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  top: 15px;
+  right: 20px;
+  
+}
+
+.header__decor::before{
+  content: "REC";
+  text-align: center;
+  color: var(--accent-color)
+}
+
+.header__decor::after{
+  content: "";
+  background-color: #ff0070;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  
+  box-shadow: 0 0 4px 2px #ff0070;
+}
+
+.header__theme-menu-button{
+  padding: 0px 13px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: lowercase;
+  background-color: transparent;
+  border: none;
+  color: var(--accent-color)
+}
+
+.header__theme-menu-button_active{
+  border: solid 1px var(--accent-color) 
+}
+
+.title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: #DB00FF;
+  font-weight: 700;
+  font-size: 116px;
+  line-height: 83%;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__text{
+  align-self: center;
+  color:black;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  background-color: var(--accent-color);
+}
+.main-content{
+  padding: 40px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main-content__section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
