@@ -1,13 +1,7 @@
 :root {
   --main-color: #000028;
   --accent-color: #ff0070;
-  --text-color: #fff;
-  --text-size:
+  --text-color: #F1B2CE;
+  --header-color: #ff0070;
+  --header-extra-color: #000028;
 }
-
-
-
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
