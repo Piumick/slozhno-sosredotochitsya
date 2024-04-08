@@ -1,5 +1,6 @@
 .page {
   background-color: var(--main-color);
+  background-attachment: fixed;
 }
 
 .header {
@@ -75,7 +76,7 @@
 .header__theme-menu-button {
   border: none;
   padding: 0px 12px;
-  color: var(--header-color);
+  color: var(--mini-title-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 138%;
@@ -85,11 +86,11 @@
 }
 
 .header__theme-menu-button_active {
-  border: solid 1px var(--header-color);
+  border: solid 1px var(--mini-title-color);
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--hover-dec-color);
+  border: 1px solid var(--button-dec-color);
 }
 
 .header__theme-menu-button:focus,
@@ -98,14 +99,13 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-bottom: 1px solid var(--header-color);
+  border-bottom: 1px solid var(--mini-title-color);
 }
 
 .title {
-  color: var(--main-header-color);
+  color: var(--main-title-color);
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  font-size: 116px;
   line-height: 83%;
   text-shadow: 4px 4px 0 #FF0070;
 }
@@ -114,7 +114,7 @@
   justify-self: flex-end;
   align-self: center;
   width: max(calc(50%), 355px);
-  color: var(--header-extra-color);
+  color: var(--title-extra-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
@@ -139,7 +139,7 @@
 }
 
 .article__title {
-  color: var(--header-color);
+  color: var(--mini-title-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
@@ -153,7 +153,7 @@
 
 .mini-article__title {
   margin-block-end: 10px;
-  color: var(--header-extra-color);
+  color: var(--title-extra-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
@@ -164,27 +164,30 @@
   margin-bottom: 20px;
 }
 
-.article__text {
+.mini-article__text {
   color: var(--text-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
 }
-.hyperlink{
+
+.hyperlink {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
 }
-.hyperlink:hover{
+
+.hyperlink:hover {
   border-bottom: 1px solid var(--text-color);
 }
-.hyperlink:focus-visible{
+
+.hyperlink:focus-visible {
   border: 1px solid var(--text-color);
 }
 
 
 .micro-article-title {
   margin-block-end: 10px;
-  color: var(--header-extra-color);
+  color: var(--title-extra-color);
   font-weight: 400;
   font-size: 18px;
   line-height: 130%;
@@ -206,7 +209,7 @@
 
 .footer-title {
   justify-self: center;
-  color: var(--main-header-color);
+  color: var(--main-title-color);
   font-weight: 700;
   font-size: 116px;
   line-height: 83%;
@@ -364,8 +367,9 @@
   .main-content .article:nth-child(odd) {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
   .main-content .article:nth-child(odd) .mini-article__list,
-  .main-content .article:nth-child(odd) .semi-article{
+  .main-content .article:nth-child(odd) .semi-article {
     grid-column-start: 2;
     grid-column-end: 4;
   }
