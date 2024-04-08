@@ -7,5 +7,9 @@
 .page.theme_dark {
   --main-color: #000028;
   --accent-color: #ff0070;
-  
+  --text-color: #F1B2CE;
+  --main-title-color: #DB00FF;
+  --mini-title-color: #ff0070;
+  --title-extra-color: #000028;
+  --button-dec-color: rgba(255, 0, 112, 0.4);
 }
