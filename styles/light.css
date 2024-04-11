@@ -5,6 +5,7 @@
 */
 
 .page.theme_light {
+    background-image: url(../images/cover-image-light.png);
     --main-color: #FFF1F7;
     --accent-color: #FF8DCB;
     --text-color: #353430;
@@ -14,9 +15,6 @@
     --button-dec-color: rgba(53, 52, 48, 0.4);
 }
 
-.page.theme_light {
-  background-image: url(../images/cover-image-light.png);
-}
 
 .page.theme_light .header .header__decor {
   display: none;
