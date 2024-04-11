@@ -14,7 +14,7 @@
     --button-dec-color: rgba(53, 52, 48, 0.4);
 }
 
-.page.theme_light .header {
+.page.theme_light {
   background-image: url(../images/cover-image-light.png);
 }
 
